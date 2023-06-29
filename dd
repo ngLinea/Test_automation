@@ -1,0 +1,16 @@
+mat = np.array([[0,1,2],[0,2,4],[0,3,6]])    # mat이라는 배열을 정의    
+mat_where = np.where(mat<4, mat, -1)    # 배열 mat의 원소 중 4보다 작은 값에서는 -1을 반환
+print(mat)
+print(mat_where)
+print()
+
+a = np.array([1,2,3,4])
+b = np.array([2,0,1,4])
+test = np.where(a<b, a, b+10)  # 배열 a,b의 원소를 1:1로 비교하는데, a의 원소가 크면 a를 반환, 아니면 b+10을 반환
+print(test)
+print()
+
+a1 = np.array([[2],[3],[4]])
+b1 = np.array([1,2,3])
+test1 = np.where(a1<b1, a1, b1+10)  # a1이 3 by 1 배열로 첫번째 열과 b1을 비교하여 조건에 맞게 a1 또는 b1+10을 반환
+print(test1)
