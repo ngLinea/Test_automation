@@ -1,0 +1,11 @@
+import numpy as np 
+tmp = np.array([2,3,6,7,10,13,14])       # 배열 tmp를 생성
+
+tmp1 = np.where(tmp<7, tmp,1)     # tmp의 원소가 7보다 작으면 tmp를 그대로 반환, 아니면 1을 반환
+print(tmp1)
+
+tmp2 = np.where(tmp<7, tmp, 2*tmp)     # tmp의 원소가 7보다 작으면 tmp를 반환, 아니면 tmp*2를 반환
+print(tmp2)
+
+tmp3 = np.where(tmp<10, 1, 2)     # tmp의 원소가 7보다 작으면 0을 반환, 아니면 9를 반환
+print(test6)
